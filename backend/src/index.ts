@@ -76,8 +76,7 @@ app.post('/api/context', async (req, res) => {
 
         const data = await response.json();
 
-        console.log('data', data);
-
+        //@ts-expect-error no type for data
         res.json({ result: data.response });
     } catch (err) {
         console.error(err);
