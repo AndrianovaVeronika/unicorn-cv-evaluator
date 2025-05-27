@@ -11,7 +11,7 @@ This is a **monorepo** powered by `pnpm workspaces`, containing two main parts:
 unicorn-cv-evaluator/
 │
 ├── frontend/ # Chrome Extension UI (TypeScript + Webpack)
-├── backend/ # Express.js server with OpenAI integration
+├── backend/ # Express.js server with AI (mistral LLM) integration
 ├── pnpm-workspace.yaml
 └── README.md
 
@@ -19,12 +19,16 @@ unicorn-cv-evaluator/
 
 ## ✨ Features
 
-- 📋 Analyze how well your resume fits a job posting
-- 🧠 Get a Unicorn Score (0–100)
-- ✅ See matched skills and what's missing
-- 💡 Get AI-generated suggestions for improvement
-- 🧩 Built as a Chrome Extension (Manifest V3)
-- 🔐 Uses a secure backend proxy for OpenAI API
+- 📋 Analyze job descriptions directly on the browser page – no need to switch tabs
+- 💬 Extract only the essentials – skip the fluff, keep the value
+- 🧠 Unicorn Score – see how well your resume matches the job
+- ✅ Skill Matching – view what fits and what's missing
+- 💡 Smart Suggestions – AI-powered tips to improve your resume
+- 🧩 Chrome Extension (Manifest V3)
+- 🔐 100% local AI – Your resume and job data never leave your device
+
+## !!!
+- ⚙️ Requires local setup of Mistral 7B via Ollama – GPU recommended for best performance
 
 ---
 
