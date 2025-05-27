@@ -1,0 +1,21 @@
+{
+  "name": "unicorn-cv-evaluator",
+  "author": "Andrianova Veronika",
+  "version": "1.0.0",
+  "description": "Find out how much of a unicorn you are!\r This tool analyzes your CV against a job description, scores your fit, and provides suggestions for improvement.",
+  "license": "Custom (MIT + Non-Commercial)",
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend dev",
+    "build:frontend": "pnpm --filter frontend build",
+    "dev:backend": "pnpm --filter backend dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrianovaVeronika/unicorn-cv-evaluator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndrianovaVeronika/unicorn-cv-evaluator/issues"
+  },
+  "homepage": "https://github.com/AndrianovaVeronika/unicorn-cv-evaluator#readme",
+  "devDependencies": {}
+}

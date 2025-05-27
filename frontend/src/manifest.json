@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "How much of a Unicorn are you?",
+  "description": "Analyze your resume, compare it to job descriptions, and calculate your Unicorn Score.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "app.html",
+    "default_icon": {
+      "16": "icons/icon-32.png",
+      "48": "icons/icon-64.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-32.png",
+    "48": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": ["tabs", "scripting", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"]
+}
