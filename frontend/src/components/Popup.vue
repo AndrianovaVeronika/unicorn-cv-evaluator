@@ -19,8 +19,8 @@
       <b>Product</b>
       <div>{{ result.product }}</div>
 
-      <b>German required</b>
-      <div>{{ result.germanReq }}</div>
+      <b>Languages required</b>
+      <div>{{ result.languagesReq }}</div>
     </div>
 
 <!--    <button @click="" :disabled="loading1">-->

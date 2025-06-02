@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 
 //!openai model
 // import OpenAI from 'openai';
+
 //!mistral model
 const fetch = (await import('node-fetch')).default;
 
@@ -58,7 +59,7 @@ app.post('/api/context', async (req, res) => {
                       "devLanguages": [List of actual programming languages mentioned, like Java, Python, JavaScript, etc.],
                       "technologies": [List of tools, frameworks, platforms, cloud services, databases, etc. used],
                       "product": "Short explanation (1–2 sentences): What product is being built, what problem it solves, and for whom?"
-                      "germanReq": "Is german language required for this job? If yes which level? If no just write 'No'"
+                      "languagesReq": "Are any languages as german or english required for this job? If yes which level? If no just write 'No'"
                     }
                     
                     Important rules:
@@ -75,6 +76,8 @@ app.post('/api/context', async (req, res) => {
         });
 
         const data = await response.json();
+
+        console.log(data);
 
         //@ts-expect-error no type for data
         res.json({ result: data.response });
